@@ -41,7 +41,7 @@ public class ClienteService {
 		return repo.findAll();
 	}
 	
-	@Transactional
+	@Transactional  
 	public Cliente insert(Cliente obj) {
 		obj.setId(null);
 		obj = repo.save(obj);
