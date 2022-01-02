@@ -17,7 +17,7 @@ import com.nelioalves.cursomc.services.SmptEmailService;
 public class DevConfig {
 	
 	@Autowired
-	DBService dbService;
+	private DBService dbService;
 	
 	@Value("${spring.jpa.hibernate.ddl-auto}")
 	private String strategy;
